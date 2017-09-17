@@ -52,7 +52,7 @@ class Song
   def self.new_from_filename(mp3)
     row = mp3.split("-")
     artist_name = row[0]
-    song_name = row[1].delete(/(.mp3)/
+    song_name = row[1].delete(/(.mp3)/)
   end
 
 end
