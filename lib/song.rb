@@ -20,7 +20,7 @@ class Song
     song = self.new
     # song.name = name
     # song.artist = artist_name
-    @@all << self.new
+    @@all << song
 
   end
 
