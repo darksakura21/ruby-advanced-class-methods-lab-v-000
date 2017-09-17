@@ -49,10 +49,6 @@ class Song
         end
     else
       self.create_by_name(name)
-      self.all.each do |song|
-        song.name == name
-        song
-      end
     end
   end
 
