@@ -51,9 +51,9 @@ class Song
 
   def self.new_from_filename(mp3)
     row = mp3.split("-")
-    song = file.collect do |file|
+    song = file.collect do |row|
     self.create_by_name()
-    
+
   end
 
 end
