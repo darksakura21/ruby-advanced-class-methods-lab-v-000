@@ -30,5 +30,4 @@ class Song
     song.name
   end
 
-
 end
