@@ -10,6 +10,8 @@ class Song
 
   def self.create(name, artist_name)
     song = self.new(name, artist_name)
+    song.name = name
+    song.artist = artist_name
 
   end
 
