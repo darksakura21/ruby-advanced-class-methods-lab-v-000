@@ -9,7 +9,7 @@ class Song
   end
 
   def self.create(name, artist_name)
-    song = self.snew(name, artist_name)
+    song = self.new(name, artist_name)
 
   end
 
