@@ -31,7 +31,7 @@ class Song
   end
 
   def self.create_by_name(name)
-    song.new_by_name(name)
+    song.new_by_name(name).save
 
   end
 
