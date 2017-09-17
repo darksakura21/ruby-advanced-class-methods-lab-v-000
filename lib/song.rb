@@ -54,6 +54,8 @@ class Song
     artist_name = row[0]
     song_name_mp3 = row[1].split(".")
     song_name = song_name_mp3[0]
+
+    self.create_by_name(song_name)
   end
 
 end
