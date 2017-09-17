@@ -50,7 +50,10 @@ class Song
   end
 
   def self.new_from_filename(mp3)
-    file = mp3.split("-")
+    row = mp3.split("-")
+    song = file.collect do |file|
+    self.create_by_name()
+    
   end
 
 end
