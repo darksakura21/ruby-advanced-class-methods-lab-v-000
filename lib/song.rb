@@ -46,6 +46,7 @@ class Song
         self.all.each do |song|
           song.include?(name)
           song
+        end
       end
     else
       self.create_by_name(name)
