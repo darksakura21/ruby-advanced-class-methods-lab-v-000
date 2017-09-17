@@ -49,7 +49,7 @@ class Song
     self.all.sort_by{|song| song.name}
   end
 
-  def self.new_from_filename(mp3)
+  def self.new_from_filename(mp3) ## <== Is this the dryest way to do this?
     row = mp3.split(" - ")
     artist_name = row[0]
     song_name_mp3 = row[1].split(".")
@@ -60,9 +60,12 @@ class Song
     song.artist_name = artist_name
     song
   end
-  
+
   def self.create_from_filename(mp3)
     self.new_from_filename(mp3).save
+  end
+
+  def self.destroy_all
   end
 
 end
